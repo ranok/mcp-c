@@ -1,3 +1,5 @@
+
+
 # mcp-c
 mcp server frarmwork written in c, developing efficiently and effortlessly
 utilize annotate to generate code automatically, only need to focus on what to need to write mcp server function
@@ -5,7 +7,7 @@ utilize annotate to generate code automatically, only need to focus on what to n
 ## how to use
 1. write your own mcp tools under `src/mcp_server`
    - add attributes `EXPORT` and `EXPORT_AS(name)` to the functions and structs you want to use
-2. build the project, `cmake -B build -S .  && cmake --build .`, export.cpp will generate all the tedious code for you(like tools list, bridge json to struct, etc.)
+2. build the project, `cmake -B build -S .  && cmake --build .`, `export` will generate all the tedious code for you(like tools list, bridge json to struct, etc.)
 3. run the project, `./mcpc`
 
 ## quick start
@@ -185,4 +187,3 @@ this will generate a get_all_function_signatures_json function which will return
 ```
 
 3. use EXPORT for short
-
